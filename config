@@ -1,0 +1,18 @@
+{
+    "ring.size":5,
+    "startup.node.id":"127.0.0.1",
+    "stabilize.period.millis":15000,
+    "liveChanges":[
+        {"id":"127.0.0.7","timeInMillis":2000,"action":"join-ring"},
+        {"id":"127.0.0.11","timeInMillis":15000,"action":"join-ring"},
+        {"id":"127.0.0.20","timeInMillis":15000,"action":"join-ring"},
+        {"id":"127.0.0.7","timeInMillis":1000,"query":"put","data":"1=Phani"},
+        {"id":"127.0.0.100","timeInMillis":15000,"action":"join-ring"},
+        {"id":"127.0.0.11","timeInMillis":15000,"action":"leave-ring"},
+        {"id":"127.0.0.20","timeInMillis":1000,"query":"get","data":"1"},
+        {"id":"127.0.0.7","timeInMillis":1000,"query":"put","data":"31=Seshu"},
+        {"id":"127.0.0.20","timeInMillis":15000,"action":"leave-ring"},
+        {"id":"127.0.0.100","timeInMillis":1000,"query":"get","data":"1"},
+        {"id":"127.0.0.7","timeInMillis":1000,"query":"get","data":"31"}
+    ]
+}
